@@ -8,135 +8,237 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="utility-bar">
-  <div class="utility-inner">
-    <span data-date>Monday, September 21, 2026</span>
-    <span class="utility-tagline">Small repairs, done right</span>
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <span>Small repairs, done right</span>
+    <span>Beginner-friendly DIY guides</span>
   </div>
 </div>
-<header class="masthead">
-  <a class="wordmark" href="index.html">The Handy <span class="spark">Home</span></a>
-</header>
-<div class="nav-strip">
-  <div class="nav-strip-inner">
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="The Handy Home">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L3 18l3 3 5.7-5.7a4.5 4.5 0 0 0 6-6L14 13l-3-3 3.7-3.7z"/>
+        </svg>
+      </span>
+      <span class="brand-name">The Handy <em>Home</em></span>
+    </a>
     <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation">&#9776;</button>
-    <nav class="main-nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+    <nav class="nav">
+      <a class="nav-link active" href="index.html">Projects</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="btn btn-small btn-accent" href="#projects">Start a project</a>
     </nav>
   </div>
-</div>
+</header>
 
 <section class="hero">
-  <div class="container">
-    <h1>Fix it yourself, <span class="accent">the easy way.</span></h1>
-    <p>Plain-English guides for the small repairs that annoy you daily: squeaky doors, slow drains, tired caulk, scuffed walls. No tool belt required.</p>
+  <div class="wrap hero-inner">
+    <span class="hero-kicker"><span class="sq"></span>DIY home repair guides</span>
+    <h1 class="hero-title">Fix it yourself.<br>We will show you <span class="mark">how.</span></h1>
+    <p class="hero-sub">No tool belt required. Every guide is written for first-timers: the exact steps, the cheap tools that actually matter, and the mistakes to skip, in plain English.</p>
+    <div class="hero-cta">
+      <a class="btn btn-accent" href="#projects">Browse the projects</a>
+      <a class="btn btn-ghost" href="about.html">How this site works</a>
+    </div>
+    <div class="hero-stats">
+      <span class="stat-chip"><b>6</b> step-by-step guides</span>
+      <span class="stat-chip"><b>10 min</b> shortest fix</span>
+      <span class="stat-chip"><b>$0-$15</b> typical cost</span>
+    </div>
   </div>
 </section>
 
-<main class="container">
-  <div class="section-head"><span>Top Stories</span></div>
-
-  <article class="featured">
-    <div class="featured-text">
-      <span class="kicker">Quick Fixes</span>
-      <h2><a href="posts/fix-squeaky-door-10-minutes.html">Fix a Squeaky Door in 10 Minutes</a></h2>
-      <p class="featured-excerpt">That hinge has been announcing every trip to the kitchen for months. All you need is a hammer, a nail, and something slippery from under your sink.</p>
-      <div class="story-meta"><span>By Jake Morrison</span><a class="read-more" href="posts/fix-squeaky-door-10-minutes.html">Read more &rarr;</a></div>
+<main>
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">The project list</div>
+        <h2 class="section-title">Pick something broken. Fix it today.</h2>
+        <p class="section-sub">Each guide lists the time, the difficulty, and every tool you need before you start. No surprises halfway through.</p>
+      </div>
+      <div class="cards">
+        <a class="card card-featured" href="posts/fix-squeaky-door-10-minutes.html">
+          <span class="featured-ribbon">Start here</span>
+          <div class="card-main">
+            <div class="card-top">
+              <span class="tag">Quick Fixes</span>
+              <span class="time-badge">10 min</span>
+            </div>
+            <h3 class="card-title">Fix a Squeaky Door in 10 Minutes</h3>
+            <p class="card-excerpt">One squeaky hinge, one nail, one dab of petroleum jelly. The fastest win in home repair, and the perfect first project if you have never fixed anything.</p>
+            <div class="card-foot">
+              <span class="card-link">Read the guide &rarr;</span>
+              <span class="level easy">Easy</span>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="posts/unclog-drain-without-chemicals.html">
+          <div class="card-top">
+            <span class="tag">Plumbing</span>
+            <span class="time-badge">20 min</span>
+          </div>
+          <h3 class="card-title">Unclog a Slow Drain Without Harsh Chemicals</h3>
+          <p class="card-excerpt">The plunger technique that actually works, plus the $4 zip tool behind most bathroom clogs. Skip the chemical bottle.</p>
+          <div class="card-foot">
+            <span class="card-link">Read the guide &rarr;</span>
+            <span class="level easy">Easy</span>
+          </div>
+        </a>
+        <a class="card" href="posts/patch-drywall-hole-invisible.html">
+          <div class="card-top">
+            <span class="tag">Walls &amp; Paint</span>
+            <span class="time-badge">1 hr</span>
+          </div>
+          <h3 class="card-title">Patch a Drywall Hole So Nobody Notices</h3>
+          <p class="card-excerpt">From nail holes to doorknob dents: the feathering technique that makes patches disappear under paint.</p>
+          <div class="card-foot">
+            <span class="card-link">Read the guide &rarr;</span>
+            <span class="level moderate">Moderate</span>
+          </div>
+        </a>
+        <a class="card" href="posts/silence-dripping-faucet.html">
+          <div class="card-top">
+            <span class="tag">Plumbing</span>
+            <span class="time-badge">30 min</span>
+          </div>
+          <h3 class="card-title">Silence a Dripping Faucet This Weekend</h3>
+          <p class="card-excerpt">A $5 washer or cartridge ends the drip and the water bill. Shut off the water, swap the part, done.</p>
+          <div class="card-foot">
+            <span class="card-link">Read the guide &rarr;</span>
+            <span class="level easy">Easy</span>
+          </div>
+        </a>
+        <a class="card" href="posts/hang-shelf-straight-first-try.html">
+          <div class="card-top">
+            <span class="tag">Tools &amp; Skills</span>
+            <span class="time-badge">45 min</span>
+          </div>
+          <h3 class="card-title">Hang a Shelf Straight on the First Try</h3>
+          <p class="card-excerpt">Find the studs, pick anchors rated for real weight, and use the level trick that guarantees straight.</p>
+          <div class="card-foot">
+            <span class="card-link">Read the guide &rarr;</span>
+            <span class="level easy">Easy</span>
+          </div>
+        </a>
+        <a class="card" href="posts/recaulk-bathtub-right-way.html">
+          <div class="card-top">
+            <span class="tag">Bathroom</span>
+            <span class="time-badge">2 hrs</span>
+          </div>
+          <h3 class="card-title">Re-Caulk a Bathtub the Right Way</h3>
+          <p class="card-excerpt">Strip every bit of old caulk, dry the joint completely, and lay a silicone bead that stays sealed for years.</p>
+          <div class="card-foot">
+            <span class="card-link">Read the guide &rarr;</span>
+            <span class="level moderate">Moderate</span>
+          </div>
+        </a>
+      </div>
     </div>
-    <div class="featured-panel">
-      <blockquote>A squeaky hinge is metal rubbing dry metal. Give it lubrication and the soundtrack of your house changes tonight.</blockquote>
+  </section>
+
+  <section class="section band-dark">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">How it works</div>
+        <h2 class="section-title">Three steps. Zero experience needed.</h2>
+        <p class="section-sub">Every guide on this site follows the same beginner-proof format, so you always know what is coming next.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Pick your project</h3>
+          <p>Choose a guide that matches the thing that is broken. Each one shows the time and difficulty up front, so you never start something you cannot finish.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Gather the basics</h3>
+          <p>Every guide opens with a short tools list, mostly things you already own. Anything you need to buy costs a few dollars at any hardware store.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Follow the steps</h3>
+          <p>Work through the numbered steps in order. We flag the common mistakes at each stage, so you learn what the pros watch out for.</p>
+        </div>
+      </div>
     </div>
-  </article>
+  </section>
 
-  <div class="diamond-divider">&#9670;</div>
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">The starter kit</div>
+        <h2 class="section-title">Four tools cover most of these guides</h2>
+        <p class="section-sub">You do not need a workshop. This handful of basics handles nearly every project on this site.</p>
+      </div>
+      <div class="toolbox">
+        <div class="tool">
+          <div class="tool-icon">&#128296;</div>
+          <h3>Adjustable wrench</h3>
+          <p>Faucets, supply lines, and anything with a nut.</p>
+        </div>
+        <div class="tool">
+          <div class="tool-icon">&#128304;</div>
+          <h3>Drill + bits</h3>
+          <p>Shelves, anchors, and pilot holes.</p>
+        </div>
+        <div class="tool">
+          <div class="tool-icon">&#128207;</div>
+          <h3>Level</h3>
+          <p>Your phone has one built in, and it works fine.</p>
+        </div>
+        <div class="tool">
+          <div class="tool-icon">&#128397;</div>
+          <h3>Putty knife</h3>
+          <p>Drywall patching, scraping, and spreading.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="section-head"><span>More Fixes</span></div>
-
-  <ol class="story-list">
-    <li>
-      <span class="story-num">01</span>
-      <div class="story-main">
-        <span class="kicker">Plumbing</span>
-        <h3><a href="posts/unclog-drain-without-chemicals.html">Unclog a Slow Drain Without Harsh Chemicals</a></h3>
-        <p>Before you pour something corrosive down the pipes, try the three methods plumbers actually use first. One of them costs nothing.</p>
-        <div class="story-meta"><span>By Jake Morrison</span><a class="read-more" href="posts/unclog-drain-without-chemicals.html">Read more &rarr;</a></div>
+  <section class="section" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="about-band">
+        <div>
+          <h2>Written by someone who learned the hard way</h2>
+          <p>Jake Morrison spent years calling a handyman for $15 fixes, then started doing them himself and writing down exactly what worked. That is this site: no jargon, no assumed knowledge, just the repair.</p>
+          <a class="btn" href="about.html">More about Jake</a>
+        </div>
       </div>
-    </li>
-    <li>
-      <span class="story-num">02</span>
-      <div class="story-main">
-        <span class="kicker">Walls &amp; Paint</span>
-        <h3><a href="posts/patch-drywall-hole-invisible.html">Patch a Drywall Hole So Nobody Notices</a></h3>
-        <p>Doorknob dents, anchor holes, mystery dings. The patch-and-feather method that makes repairs vanish under a coat of paint.</p>
-        <div class="story-meta"><span>By Jake Morrison</span><a class="read-more" href="posts/patch-drywall-hole-invisible.html">Read more &rarr;</a></div>
-      </div>
-    </li>
-    <li>
-      <span class="story-num">03</span>
-      <div class="story-main">
-        <span class="kicker">Plumbing</span>
-        <h3><a href="posts/silence-dripping-faucet.html">Silence a Dripping Faucet This Weekend</a></h3>
-        <p>That drip is a worn washer or cartridge, and it is wasting gallons a week. A $5 part and thirty minutes ends it for good.</p>
-        <div class="story-meta"><span>By Jake Morrison</span><a class="read-more" href="posts/silence-dripping-faucet.html">Read more &rarr;</a></div>
-      </div>
-    </li>
-    <li>
-      <span class="story-num">04</span>
-      <div class="story-main">
-        <span class="kicker">Tools &amp; Skills</span>
-        <h3><a href="posts/hang-shelf-straight-first-try.html">Hang a Shelf Straight on the First Try</a></h3>
-        <p>Crooked shelves are a measuring problem, not a skill problem. Studs, anchors, and the level trick that never fails.</p>
-        <div class="story-meta"><span>By Jake Morrison</span><a class="read-more" href="posts/hang-shelf-straight-first-try.html">Read more &rarr;</a></div>
-      </div>
-    </li>
-    <li>
-      <span class="story-num">05</span>
-      <div class="story-main">
-        <span class="kicker">Bathroom</span>
-        <h3><a href="posts/recaulk-bathtub-right-way.html">Re-Caulk a Bathtub the Right Way</a></h3>
-        <p>Moldy, peeling caulk is letting water behind your tub. Strip it, dry it, and lay a bead that actually stays sealed.</p>
-        <div class="story-meta"><span>By Jake Morrison</span><a class="read-more" href="posts/recaulk-bathtub-right-way.html">Read more &rarr;</a></div>
-      </div>
-    </li>
-  </ol>
-
+    </div>
+  </section>
 </main>
 
-<section class="newsletter-band">
-  <div class="newsletter-inner">
-    <span class="kicker">The Saturday Fix</span>
-    <h2>Get one practical repair guide every Saturday</h2>
-    <p>Join the Saturday Fix: one practical repair guide in your inbox every Saturday morning. Unsubscribe anytime.</p>
-    <form class="newsletter-form" id="newsletter-form" novalidate>
-      <input type="email" name="email" placeholder="Your email address" aria-label="Email address" required>
-      <button type="submit" class="btn">Subscribe</button>
-    </form>
-    <div class="form-success" id="newsletter-success">You are in. Check your inbox for a welcome note from Jake.</div>
-  </div>
-</section>
-
 <footer class="site-footer">
-  <div class="footer-inner">
-    <div>
-      <a class="wordmark wordmark-footer" href="index.html">The Handy <span class="spark">Home</span></a>
-      <p class="footer-tagline">Small repairs, done right: plumbing, walls, tools, and weekend fixes.</p>
-    </div>
-    <div class="footer-columns">
-      <div>
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="The Handy Home">
+          <span class="brand-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L3 18l3 3 5.7-5.7a4.5 4.5 0 0 0 6-6L14 13l-3-3 3.7-3.7z"/>
+            </svg>
+          </span>
+          <span class="brand-name">The Handy <em>Home</em></span>
+        </a>
+        <p class="footer-tag">Plain-English DIY repair guides for renters and first-time homeowners. Small repairs, done right.</p>
+      </div>
+      <div class="footer-col">
         <h4>Explore</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">All projects</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-      <div>
+      <div class="footer-col">
         <h4>Legal</h4>
         <ul>
           <li><a href="privacy-policy.html">Privacy Policy</a></li>
@@ -144,10 +246,10 @@
         </ul>
       </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <span>&copy; <span data-year>2026</span> The Handy Home. All rights reserved.</span>
-    <span>By Jake Morrison</span>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> The Handy Home. All rights reserved.</span>
+      <span>Written by Jake Morrison</span>
+    </div>
   </div>
 </footer>
 

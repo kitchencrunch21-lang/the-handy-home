@@ -4,25 +4,13 @@
 
   // Mobile nav toggle
   var toggle = document.querySelector(".menu-toggle");
-  var nav = document.querySelector(".main-nav");
+  var nav = document.querySelector(".nav");
   if (toggle && nav) {
     toggle.addEventListener("click", function () {
       nav.classList.toggle("open");
       var expanded = nav.classList.contains("open");
       toggle.setAttribute("aria-expanded", expanded ? "true" : "false");
     });
-  }
-
-  // Current date in the utility bar
-  var dateEls = document.querySelectorAll("[data-date]");
-  if (dateEls.length) {
-    var today = new Date().toLocaleDateString("en-US", {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      day: "numeric"
-    });
-    dateEls.forEach(function (el) { el.textContent = today; });
   }
 
   // Footer year
