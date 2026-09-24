@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lock Down Windows 11 in 30 Minutes - The Handy Home</title>
+  <meta name="description" content="A 30-minute Windows 11 security checklist: antivirus, ransomware protection, sign-in upgrades, drive encryption, permission audits, and backups. No downloads needed.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <span>Small repairs, done right</span>
+    <span>Beginner-friendly DIY guides</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html" aria-label="The Handy Home">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L3 18l3 3 5.7-5.7a4.5 4.5 0 0 0 6-6L14 13l-3-3 3.7-3.7z"/>
+        </svg>
+      </span>
+      <span class="brand-name">The Handy <em>Home</em></span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation">&#9776;</button>
+    <nav class="nav">
+      <a class="nav-link" href="../index.html">Projects</a>
+      <a class="nav-link" href="../about.html">About</a>
+      <a class="nav-link" href="../contact.html">Contact</a>
+      <a class="btn btn-small btn-accent" href="../index.html#projects">Start a project</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <nav class="crumbs"><a href="../index.html">Home</a><span class="sep">/</span><span>Tech</span></nav>
+    <header class="article-hero">
+      <span class="tag">Tech</span>
+      <h1>Lock Down Windows 11 in 30 Minutes</h1>
+      <div class="article-meta">
+        <span class="byline"><span class="avatar">JM</span> Jake Morrison</span>
+        <span class="meta-dot">&middot;</span><span>7 min read</span>
+        <span class="meta-dot">&middot;</span><span class="spec-chip">30 min</span>
+        <span class="spec-chip level easy">Easy</span>
+      </div>
+    </header>
+    <article class="article-body">
+    <p>Most people treat PC security the way they treat changing furnace filters: important in theory, postponed in practice. The setup feels technical, the payoff is invisible, and nothing bad has happened yet, so it slides to next weekend. Then next weekend brings a phishing email that looks exactly like the bank, or a laptop left in a rideshare, and the postponement turns expensive.</p>
+    <p>Here is the part nobody says out loud: securing Windows 11 is a small home project, not a big one. About half an hour, no parts to buy, no downloads, everything happens in tools already on the PC. Work the steps in order, top to bottom, and by the time you are done your machine will be harder to break into than nine out of ten PCs out there. Grab a coffee and let's go.</p>
+
+    <h2>What You Need</h2>
+    <p>Nothing you do not already have. Your PC, your Microsoft account password (you will need it once for the encryption step), and an external drive or a OneDrive account for the backup step. That is the whole materials list. Total cost: zero dollars.</p>
+
+    <h2>Step 1: Confirm Windows Security Is Actually On</h2>
+    <p>Windows 11 ships with a full antivirus built in, and for most households it is the only one you need. The catch is that it is not always on. A trial antivirus from the PC maker can expire and leave a gap, or a well-meaning relative can disable real-time protection "temporarily" and forget to turn it back on. Open Windows Security from the Start menu and look at the dashboard. Every tile should be green with a checkmark. Anything amber or red, click into it and follow the prompt.</p>
+    <p>While you are there, run a Quick scan under Virus and threat protection, then click Manage settings and confirm that real-time protection, cloud-delivered protection, and tamper protection are all switched on. Tamper protection is the quiet hero of this list: it stops malware from turning your defenses off. If you hit an error code you do not recognize while fixing any of this, the <a href="https://elevendecoded.com/">Windows 11 Common Errors</a> guide walks through the usual codes and what actually fixed them.</p>
+
+    <h2>Step 2: Turn On Ransomware Protection</h2>
+    <p>Ransomware is the attack most likely to ruin your month, and Windows has a specific shield for it that ships switched off. In Windows Security, go to Virus and threat protection, scroll to Ransomware protection, and open it. Turn on Controlled folder access. From now on, only trusted apps can change files in your Documents, Pictures, Videos, and Desktop folders. An unfamiliar program that tries to encrypt your photos gets blocked at the door.</p>
+    <p>The first week brings a few prompts as legitimate apps ask for access. That is normal. When a program you trust gets blocked, click the blocked notification, choose Allow an app through Controlled folder access, and add it. After the initial flurry it goes quiet. Approving your photo editor once beats negotiating with criminals over your family photos.</p>
+
+    <h2>Step 3: Upgrade How You Sign In</h2>
+    <p>Passwords are the weakest link in almost every account, and your Windows sign-in is no exception. Open Settings, then Accounts, then Sign-in options, and set up Windows Hello: face recognition if the PC has the camera for it, fingerprint if it has the reader, or a PIN as the baseline. A PIN feels like a downgrade from a password, but on Windows it is not. Your PIN unlocks only that specific device, while a stolen Microsoft account password works from anywhere on earth.</p>
+    <p>On the same page, find "If you've been away, when should Windows require you to sign in again?" and set it to "When PC wakes up from sleep." A laptop that opens straight to the desktop after you close the lid in a coffee shop is handing your files to whoever finds it. Short timeouts are mildly annoying and enormously protective.</p>
+
+    <h2>Step 4: Encrypt the Drive</h2>
+    <p>Here is the scenario encryption exists for: the laptop gets stolen, or you sell it, or it goes in for repair, and someone pulls the drive and reads everything on it. If the drive is encrypted, they get nothing but noise. On Windows 11 Pro, search the Start menu for BitLocker and turn it on for the system drive. On Home, look in Settings, then Privacy and security, then Device encryption. Same protection, different name.</p>
+    <p>Save the recovery key to your Microsoft account or print it and stash it somewhere safe. Do not skip this part: if the key is lost and the drive ever has a problem, your own files are locked away from you too. Five minutes of care here, and it is the single most effective step on this list against physical theft.</p>
+
+    <h2>Step 5: Check the Network Profile and Firewall</h2>
+    <p>Your firewall is almost certainly on, and it should stay on. Open Windows Security, click Firewall and network protection, and confirm all three network types show as active. Then click your current network and check its profile. At home, set it to Private, which lets the printer and file sharing work. On coffee shop or airport Wi-Fi, it should be Public, which locks down discovery and sharing so the stranger two tables over cannot see your machine.</p>
+    <p>Thirty seconds of work, skipped constantly. If the laptop auto-connected to hotel Wi-Fi last month and you never checked, check now. Public is the safe default for any network you do not own.</p>
+
+    <h2>Step 6: Audit Which Apps Can See What</h2>
+    <p>Apps collect permissions the way junk drawers collect batteries. Open Settings, then Privacy and security, and walk the list: Location, Camera, Microphone, and the rest. For each one, ask whether the apps with access still deserve it. The photo editor from 2023 does not need your location. The game you tried once does not need your microphone.</p>
+    <p>Windows makes this easy to fix: toggle off anything that looks wrong, per app or for the whole category. Also check background permissions under System, then Installed apps, then Advanced options, where you can revoke background access for anything that does not need to run while closed. Fewer permissions means fewer ways your data leaks, and fewer processes chewing battery.</p>
+
+    <h2>Step 7: Update Everything, Then Leave SmartScreen Alone</h2>
+    <p>Most successful attacks do not use exotic zero-days. They use old, patched vulnerabilities on machines that never installed the patch. Open Settings, then Windows Update, and install everything. Then check Advanced options, then Optional updates, for driver updates Windows held back. Run the PC maker's update tool too if one exists. Then open the Microsoft Store and update the apps there.</p>
+    <p>Leave SmartScreen and the phishing protection in Windows Security switched on, even though the warnings occasionally slow you down. Those warnings are the feature working. An update habit plus SmartScreen closes the two doors most malware walks through.</p>
+
+    <h2>Step 8: Set Up a Backup Before You Need One</h2>
+    <p>Security is not only about keeping attackers out. It is about surviving the day something goes wrong anyway. Plug in an external drive, open Settings, then System, then Storage, then Advanced storage settings, then Backup options, and turn on File History. Or confirm OneDrive is backing up Desktop, Documents, and Pictures. Either one is fine. None is not.</p>
+    <p>Test it once: create a throwaway file, wait for a backup cycle, delete it, and restore it. A backup you have never tested is a hope, not a plan. With a working backup, ransomware goes from catastrophe to inconvenience, which is exactly the trade you want.</p>
+
+    <h2>The Five-Minute Monthly Check</h2>
+    <p>Thirty minutes, eight steps, and the PC is now a harder target than almost everything around it. Security is never finished, but it does not need to be finished to be effective. Once a month, spend five minutes re-checking: updates installed, Security dashboard green, backup ran. That is the whole maintenance plan.</p>
+    <p>Think of it like changing the furnace filter or testing the smoke detectors. Small habit, big protection. And now that the locks are changed, you can enjoy the house.</p>
+  </article>
+    <aside class="next-box">
+      <div>
+        <h3>Next project: Windows 11 Features Worth Using Every Day</h3>
+        <p>Snap layouts, virtual desktops, clipboard history, and more, all already on your PC.</p>
+      </div>
+      <a class="btn btn-accent" href="windows-11-hidden-features-worth-using.html">Read it &rarr;</a>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="../index.html" aria-label="The Handy Home">
+          <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L3 18l3 3 5.7-5.7a4.5 4.5 0 0 0 6-6L14 13l-3-3 3.7-3.7z"/>
+        </svg>
+      </span>
+          <span class="brand-name">The Handy <em>Home</em></span>
+        </a>
+        <p class="footer-tag">Plain-English DIY repair guides for renters and first-time homeowners. Small repairs, done right.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="../index.html">All projects</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> The Handy Home. All rights reserved.</span>
+      <span>Written by Jake Morrison</span>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
